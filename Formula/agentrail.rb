@@ -1,18 +1,19 @@
 class Agentrail < Formula
   desc "Portable coding-agent handoff CLI"
   homepage "https://github.com/Latentik/agentrail"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Latentik/agentrail/releases/download/v0.1.2/agentrail-v0.1.2-macos-arm64.tar.gz"
-      sha256 "a897507a1cb9974a0c6f08a6245f323d09766a2a04c13505590de9ac237c5c03"
+      url "https://github.com/Latentik/agentrail/releases/download/v0.1.3/agentrail-v0.1.3-macos-arm64.tar.gz"
+      sha256 "babff776d2d33bc02a90e3bfa7f10ef0298278086242ef1ebab4eac16c5b2ae7"
     end
   end
 
   def install
-    bin.install "agentrail"
+    libexec.install "agentrail"
+    bin.install_symlink libexec/"agentrail"/"agentrail" => "agentrail"
   end
 
   test do
