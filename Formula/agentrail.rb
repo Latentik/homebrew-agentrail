@@ -13,7 +13,12 @@ class Agentrail < Formula
 
   def install
     libexec.install "agentrail"
-    bin.install_symlink libexec/"agentrail"/"agentrail" => "agentrail"
+    executable = if (libexec/"agentrail").directory?
+      libexec/"agentrail"/"agentrail"
+    else
+      libexec/"agentrail"
+    end
+    bin.install_symlink executable => "agentrail"
   end
 
   test do
