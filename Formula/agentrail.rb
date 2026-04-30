@@ -7,20 +7,20 @@ class Agentrail < Formula
   on_macos do
     on_arm do
       url "https://github.com/Latentik/agentrail/releases/download/v0.2.2/agentrail-v0.2.2-macos-arm64.tar.gz"
-      sha256 "2856554c0790d1548c5cb837c278182664617a0e0f4c9d2d85652769cef09223"
+      sha256 "5582c0a5fa16e0b5c821f5e46fdc1087cf426bd79348586250e15e0861f434ee"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Latentik/agentrail/releases/download/v0.2.2/agentrail-v0.2.2-linux-x86_64.tar.gz"
-      sha256 "419cdbf6f6ff789568b714ce7ee5e2e1b1160a8c29cf0f68f704f4161dc7d2fc"
+      sha256 "96a8ff144c3ee1ad609f59462bf14d961e27650286e9e9d76c7111682bc9d6fc"
     end
   end
   on_linux do
     on_arm do
       url "https://github.com/Latentik/agentrail/releases/download/v0.2.2/agentrail-v0.2.2-linux-arm64.tar.gz"
-      sha256 "aea570439438f9f6f3df4dfbe8ceb198855f33f6692ee171d8d39ea658146b86"
+      sha256 "35669bb1570e10b26f9aeea8fa58cf557a71c8151de39193eb4700f854b2340c"
     end
   end
 
